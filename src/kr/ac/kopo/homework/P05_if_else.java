@@ -2,7 +2,7 @@ package kr.ac.kopo.homework;
 
 import java.util.Scanner;
 
-public class P05 {
+public class P05_if_else {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Double score = null; // 소수점 자리수 점수 커버 , 아직 점수가 없는 상태이므로 null
