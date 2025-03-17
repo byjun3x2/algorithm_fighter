@@ -3,9 +3,8 @@ package kr.ac.kopo.homework;
 import java.util.Scanner;
 
 import java.util.InputMismatchException;
-import java.util.Scanner;
 
-public class P05 {
+public class P05_0307 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -43,3 +42,6 @@ public class P05 {
         }
     }
 }
+
+
+

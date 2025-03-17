@@ -2,7 +2,7 @@ package kr.ac.kopo.homework;
 
 import java.util.Scanner;
 
-public class P01 {
+public class P01_0307 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);

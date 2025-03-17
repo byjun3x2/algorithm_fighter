@@ -1,6 +1,6 @@
 package kr.ac.kopo.homework;
 
-public class P02 {
+public class P02_0307 {
     public static void main(String[] args) {
         char a = 'A';
         char e = 'E';

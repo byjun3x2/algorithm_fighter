@@ -2,7 +2,7 @@ package kr.ac.kopo.homework;
 
 import java.util.Random;
 
-public class P08 {
+public class P08_0307 {
     public static void main(String[] args) {
 
         int count = 1;
@@ -17,13 +17,9 @@ public class P08 {
                 if (count % 10 == 0) {
                     System.out.println('짝' + "뽀".repeat(count / 10) + "숑");
                 } else {
-                    String[] arr = (count + "").split("");
-
-                    for (int i = 0; i < arr.length; i++) {
-                        if (arr[i].contains("3") || arr[i].contains("6") || arr[i].contains("9")) {
-                            arr[i] = "짝";
-                            System.out.println(String.join("", arr));
-                        }
+                    System.out.println("짝");
+                    if ((count + "").length() >= 2) {
+                        System.out.println("짝짝");
                     }
                 }
             } else {
