@@ -93,6 +93,36 @@ public class StringUtil {
         return sb.toString();
     }
 
+    int compareTo(String str1, String str2) {
+    int ans = 0;
+    if (str1.length() >= str2.length()) {
+        int a = 0;
+        for (int i = 0; i < str2.length(); i++) {
+            if (str1.charAt(i) != str2.charAt(i)) {
+                ans = str1.charAt(i) - str2.charAt(i);
+                a = 1;
+                break;
+            }
+        }
+        if(a == 0) {
+            ans = str1.length() - str2.length();
+        }
+    } else {
+        int a = 0;
+        for (int i = 0; i < str1.length(); i++) {
+            if (str1.charAt(i) != str2.charAt(i)) {
+                ans = str1.charAt(i) - str2.charAt(i);
+                a = 1;
+                break;
+            }
+        }
+        if(a == 0) {
+            ans = str1.length() - str2.length();
+        }
+    }
+    return ans;
+}
+
     public static int checkChar (String strData,char ch){
         int count = 0;
         String[] arr = strData.split("");
@@ -104,5 +134,15 @@ public class StringUtil {
             }
         }
         return count;
+    }
+
+    public static String removeChar(String oriStar, char delChar) {
+        String sum = "";
+
+        String copied = oriStar.replace(delChar, ' ');
+        for (int i = 0; i < copied.length(); i++) {
+            sum += copied.charAt(i);
+        }
+        return sum.replace(" ", "");
     }
 }

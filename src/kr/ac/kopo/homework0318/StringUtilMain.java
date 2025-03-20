@@ -41,5 +41,8 @@ public class StringUtilMain {
         // 문제 9
         int count = su.checkChar("hello", 'l');
         System.out.println(count);
+
+        String d = su.removeChar("hello", 'l');
+        System.out.println(d);
     }
 }
